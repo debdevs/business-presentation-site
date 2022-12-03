@@ -1,5 +1,16 @@
 .hero_container {
     background:white;
-    height:500px;
+    height:100vh;
+    max-height:750px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_content_container{
+   
+    background:black;
+    height: 100%;
     width:100%;
 }
