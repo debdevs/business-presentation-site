@@ -44,9 +44,12 @@ overflow: visible;
     width:90px;
     align-items: center;
     flex-direction: column;
-    gap:15px
+    gap:15px;
+    cursor:pointer;
 }
-
+.menu_parent:hover >*{
+    background: grey;
+}
 .menu_parent li{
     background-color: white;
     color:white;
