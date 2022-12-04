@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import HomeHeroMain from '../components/UI/templates/HomeHeroMain/HomeHeroMain'
 import Navbar from '../components/UI/organisms/Navbar/Navbar'
+
 export default function Home() {
   return (
     <div className={styles.container}>
