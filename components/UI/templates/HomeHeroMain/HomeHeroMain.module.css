@@ -45,7 +45,7 @@ width:100%;
 
 .right_bg{
     background-color: blue;
-    width:75%;
+    width:55%;
 }
 .top_items {
     display: flex;
@@ -85,4 +85,38 @@ width:100%;
     font-size: 1.16rem;
     padding:0px;
     cursor:pointer;
+    width: fit-content;
+}
+.image_wrapper{
+    box-shadow: 10px 10px 55px -2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 55px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 55px -2px rgba(0,0,0,0.75);
+    width:85%;
+    max-width:650px;
+    margin-right: 5%;
+}
+.image_wrapper>*{
+
+    height: 100%;
+    width: 100%;
+}
+.hero_list{
+    display: flex;
+    gap:15px;
+    color:black;
+}
+
+@media only screen and (max-width:1600px){
+
+    .top_items h1{
+
+        font-size: 5rem;
+
+    }
+    
+    .top_items h2{
+        font-size: 25rem;
+
+    }
+
 }

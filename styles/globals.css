@@ -83,6 +83,6 @@ table {
 }
 
 
-h1, p, button {
+h1, p, button, ul , li {
   font-family: 'Poppins', sans-serif;
 }
