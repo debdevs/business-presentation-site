@@ -9,8 +9,14 @@
 }
 
 .hero_content_container{
-   
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     background:black;
     height: 100%;
     width:100%;
+}
+
+.text_container h1{
+    font-size: 5rem;
 }
