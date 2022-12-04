@@ -18,7 +18,7 @@ const HomeHeroMain = () => {
 
           </div>
           <div className={styles.bottom_items}>
-            <p>FDSFDI AFHASO FHUIDS F</p>
+            <p>Present Your Business with style and flair. Explore our presentations and choose one that fits your brand</p>
             <button>Read More</button>
             <ul className={styles.hero_list}>
               <li>Facebook</li>•
