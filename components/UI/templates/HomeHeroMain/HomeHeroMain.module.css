@@ -6,62 +6,78 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.hero_content_container{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  
-    height: 100%;
-    width:100%;
-    margin-bottom: 5%;
-}
-.left_container{
-    display:flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    width:50%;
    
 }
-.text_container {
-    display:flex;
-    justify-content: flex-start;
+
+.hero_content_container {
+    position: absolute;
+    height:100vh;
+    max-height:750px;
+    width:100%;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    background:rgba(200,200,0,.2);
+ 
+    padding: 0 15% 0 15%;
 }
-.text_container h1{
+
+.left_content, .right_content{
+    background:rgba(0,0,0,.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width:100%;
+    height:100%;
+    
+    }
+
+    .left_content{
+        align-items: flex-start;
+     
+    }
+.left_bg, .right_bg{
+
+width:100%;
+    height:100%;
+}
+
+.right_bg{
+    background-color: blue;
+    width:75%;
+}
+.top_items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.top_items h1{
+    color:black;
+    position: absolute;
+    color: black;
+    font-size: 7rem;
+    margin-top: 5%;
+}
+
+.top_items h2{
     font-size: 25rem;
     color: var(--main-color-1);
     opacity:.05;
 }
-
-
-
-.front_text_container{
-    position:absolute;
-    color: black;
-    font-size: 7rem;
-    align-self: center;
-    gap:10px;
-    margin-top: 8%;
+.bottom_items{
+   
+    display: flex;
+    flex-direction: column;
+    gap:50px;
 }
-
-
-.lower_texts{
-
-    margin-top: 5%;
-    padding-left: 4.2%;
-}
-.text_container p{
- 
+.bottom_items p {
     color: var(--accent-color-1);
     font-size: 1.3rem;
-
-  
 }
 
-.plain_button{
+.bottom_items button {
     background:transparent;
     color:black;
     border: 0px solid black;
@@ -69,10 +85,4 @@
     font-size: 1.16rem;
     padding:0px;
     cursor:pointer;
-}
-
-.right_container{
-    background-color: black;
-    width:50%;
-    height:100%;
 }
