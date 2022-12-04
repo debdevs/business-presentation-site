@@ -12,11 +12,67 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background:black;
+  
     height: 100%;
     width:100%;
+    margin-bottom: 5%;
+}
+.left_container{
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width:50%;
+   
+}
+.text_container {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.text_container h1{
+    font-size: 25rem;
+    color: var(--main-color-1);
+    opacity:.05;
 }
 
-.text_container h1{
-    font-size: 5rem;
+
+
+.front_text_container{
+    position:absolute;
+    color: black;
+    font-size: 7rem;
+    align-self: center;
+    gap:10px;
+    margin-top: 8%;
+}
+
+
+.lower_texts{
+
+    margin-top: 5%;
+    padding-left: 4.2%;
+}
+.text_container p{
+ 
+    color: var(--accent-color-1);
+    font-size: 1.3rem;
+
+  
+}
+
+.plain_button{
+    background:transparent;
+    color:black;
+    border: 0px solid black;
+    font-weight: 600;
+    font-size: 1.16rem;
+    padding:0px;
+    cursor:pointer;
+}
+
+.right_container{
+    background-color: black;
+    width:50%;
+    height:100%;
 }

@@ -17,9 +17,14 @@ a {
   box-sizing: border-box;
 }
 .padding_base{
-  max-width: 120rem;
-}
 
+  padding: 0 10% 0 10%;
+}
+:root{
+  --main-color-1: black;
+  --accent-color-1:grey;
+
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -78,6 +83,6 @@ table {
 }
 
 
-h1 {
+h1, p, button {
   font-family: 'Poppins', sans-serif;
 }
