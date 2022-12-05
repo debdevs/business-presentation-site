@@ -58,11 +58,13 @@ width:100%;
     position: absolute;
     color: black;
     font-size: 7rem;
+    font-size: 11.2vh;
     margin-top: 5%;
 }
 
 .top_items h2{
     font-size: 25rem;
+    font-size: 40vh;
     color: var(--main-color-1);
     opacity:.05;
 }
@@ -74,7 +76,7 @@ width:100%;
 }
 .bottom_items p {
     color: var(--accent-color-1);
-    font-size: 1.3rem;
+    font-size: 2.2vh;
     line-height: 1.6rem;
 }
 
