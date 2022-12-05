@@ -17,9 +17,7 @@ export default function Home() {
       <HomeHeroMain/>
       </main>
 
-      <footer className={styles.footer}>
 
-      </footer>
     </div>
   )
 }
