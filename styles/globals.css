@@ -23,6 +23,7 @@ a {
 :root{
   --main-color-1: black;
   --accent-color-1:grey;
+  --transition: all .4s ease;
 
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 

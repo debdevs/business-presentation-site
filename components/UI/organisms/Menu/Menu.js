@@ -3,6 +3,7 @@ import styles from './Menu.module.css'
 import { useState } from 'react'
 import { useContext } from 'react'
 import { HomeContext } from '../../../../contexts/HomeContext'
+import { motion, AnimatePresence } from "framer-motion"
 
 const Menu = ({state_value}) => {
     const [active, setActive] = useState(0)
@@ -12,7 +13,22 @@ const Menu = ({state_value}) => {
       );
     const menu_styles = [styles.menu_bg,styles.menu_bg_active]
   return (
-    <div className={ activeMenu == true? menu_styles[1]: menu_styles[0]}>
+
+
+    <AnimatePresence>
+    {activeMenu == true && (
+      <motion.div
+        initial={{ opacity: 0, x:115 }}
+        animate={{ opacity: 1,x:0 }}
+        exit={{ opacity: 0, x:215 }}
+        transition={{
+            delay: 0,
+            x: { duration: .5 },
+            default: { ease: "linear" }
+          }}
+        className={styles.menu_bg_active}
+      >
+
         <div className={styles.menu_content}>
             <h1>Discover More</h1>
             <ul className={styles.menu_items_parent}>
@@ -21,8 +37,15 @@ const Menu = ({state_value}) => {
                 <li>Contact</li>
                 <li></li>
             </ul>
-        </div>
+  
     </div>
+
+
+
+      </motion.div>
+    )}
+  </AnimatePresence>
+
   )
 }
 
